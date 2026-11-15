@@ -1,0 +1,72 @@
+[
+  {
+    "id": "D-001",
+    "name": "Heather Davis",
+    "nationality": "Ethiopia",
+    "number": 60,
+    "team_id": "T-002"
+  },
+  {
+    "id": "D-002",
+    "name": "Melissa Caldwell",
+    "nationality": "Cook Islands",
+    "number": 2,
+    "team_id": "T-005"
+  },
+  {
+    "id": "D-003",
+    "name": "Andrea Robinson",
+    "nationality": "Sudan",
+    "number": 38,
+    "team_id": "T-003"
+  },
+  {
+    "id": "D-004",
+    "name": "Angela Hale",
+    "nationality": "French Polynesia",
+    "number": 9,
+    "team_id": "T-001"
+  },
+  {
+    "id": "D-005",
+    "name": "Stephanie House",
+    "nationality": "Sierra Leone",
+    "number": 80,
+    "team_id": "T-005"
+  },
+  {
+    "id": "D-006",
+    "name": "Ann Sampson",
+    "nationality": "North Macedonia",
+    "number": 96,
+    "team_id": "T-003"
+  },
+  {
+    "id": "D-007",
+    "name": "Eric King",
+    "nationality": "Barbados",
+    "number": 14,
+    "team_id": "T-002"
+  },
+  {
+    "id": "D-008",
+    "name": "Katherine Campbell",
+    "nationality": "Tajikistan",
+    "number": 90,
+    "team_id": "T-001"
+  },
+  {
+    "id": "D-009",
+    "name": "Brittany Hester",
+    "nationality": "Liberia",
+    "number": 50,
+    "team_id": "T-005"
+  },
+  {
+    "id": "D-010",
+    "name": "Jack Goodwin",
+    "nationality": "Serbia",
+    "number": 23,
+    "team_id": "T-002"
+  }
+]

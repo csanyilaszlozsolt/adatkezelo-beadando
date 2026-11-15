@@ -1,0 +1,32 @@
+[
+  {
+    "id": "T-001",
+    "name": "Allen Racing",
+    "country": "Kenya",
+    "founded": 1960
+  },
+  {
+    "id": "T-002",
+    "name": "Reeves Racing",
+    "country": "Tunisia",
+    "founded": 2015
+  },
+  {
+    "id": "T-003",
+    "name": "Yu Racing",
+    "country": "Burkina Faso",
+    "founded": 1993
+  },
+  {
+    "id": "T-004",
+    "name": "Fernandez Racing",
+    "country": "French Southern Territories",
+    "founded": 1966
+  },
+  {
+    "id": "T-005",
+    "name": "Brennan Racing",
+    "country": "United States of America",
+    "founded": 1959
+  }
+]
