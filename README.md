@@ -1,0 +1,2 @@
+# adatkezelo-beadando
+
