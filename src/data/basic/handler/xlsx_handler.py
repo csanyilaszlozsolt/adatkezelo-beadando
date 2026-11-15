@@ -6,7 +6,7 @@ from data.basic.model import Team, Driver, Result
 
 def write(teams: list[Team], drivers: list[Driver], results: list[Result], path: str,
           file_name: str = "f1.xlsx") -> None:
-    # egy fajl, minden tipus kulon munkalapon, elso sor a mezonevek
+    # tipusonkent kulon munkalap
     wb = Workbook()
 
     ws = wb.active
@@ -28,10 +28,10 @@ def write(teams: list[Team], drivers: list[Driver], results: list[Result], path:
     wb.save(os.path.join(path, file_name))
 
 
-def read(path: str, file_name: str = "f1.xlsx") -> tuple[list[Team], list[Driver], list[Result]]:
+def read(path: str, file_name: str = "f1.xlsx"):
     wb = load_workbook(os.path.join(path, file_name))
 
-    # min_row=2: az elso sor a fejlec, azt kihagyjuk
+    # elso sor a fejlec
     teams = [Team(*row) for row in wb["teams"].iter_rows(min_row=2, values_only=True)]
     drivers = [Driver(*row) for row in wb["drivers"].iter_rows(min_row=2, values_only=True)]
     results = [Result(*row) for row in wb["results"].iter_rows(min_row=2, values_only=True)]

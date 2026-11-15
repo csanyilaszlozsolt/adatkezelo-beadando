@@ -5,7 +5,7 @@ from data.basic.model import Team, Driver, Result
 
 
 def write(teams: list[Team], drivers: list[Driver], results: list[Result], path: str, delimiter: str = ";") -> None:
-    # minden tipus kulon fajlba, elso sor a mezonevek
+    # tipusonkent kulon fajl
     with open(os.path.join(path, "teams.csv"), "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=["id", "name", "country", "founded"], delimiter=delimiter)
         writer.writeheader()
@@ -25,8 +25,8 @@ def write(teams: list[Team], drivers: list[Driver], results: list[Result], path:
             writer.writerow(r.__dict__)
 
 
-def read(path: str, delimiter: str = ";") -> tuple[list[Team], list[Driver], list[Result]]:
-    # csv-ben minden szoveg, ezert a szamokat int()-tel vissza kell alakitani
+def read(path: str, delimiter: str = ";"):
+    # csv-ben minden szoveg, a szamokat at kell alakitani
     with open(os.path.join(path, "teams.csv"), "r", encoding="utf-8") as file:
         teams = [Team(row["id"], row["name"], row["country"], int(row["founded"]))
                  for row in csv.DictReader(file, delimiter=delimiter)]
